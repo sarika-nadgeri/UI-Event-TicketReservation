@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="Images/envato_logo.svg" sizes="128x128">
+    <title>MyTicket-Event Ticket Hall Reservation</title>
+</head>
+
+<body>
+    <section id="container">
+        <header id="headerSection">
+            <div id="mainHead">
+                <div class="logoClass">
+                    <a href="Index.html"><img src="Images/envato_logo.svg" alt="Logo Not Found"></a>
+                </div>
+                <div class="buyNowClass">
+                    <button class="buyNowBtn">Buy Now</button>
+                </div>
+            </div>
+            <div id="topHeader">
+                <div class="container">
+                    <div class="row topHeaderClass">
+                        <div class="contactSection">
+                            <a href="tel:62274889767" class="text-light"><i class="fa fa-phone"></i> &nbsp; +62274
+                                889767</a>
+                            <a href="mailto:hello@myticket.com" class="text-light" style="margin-left: 10px;"><i
+                                    class="fa fa-envelope-o"></i> &nbsp;
+                                hello@myticket.com</a>
+                        </div>
+                        <div class="LoginSection">
+                            <span class="signIn" style="color: #ff6600;">SIGN IN</span> &nbsp; | &nbsp;
+                            <span class="signUp">SIGN UP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-hero-section" class="otherPages">
+                <div id="main-header">
+                    <div class="container">
+                        <div class="head-container">
+                            <div class="homePageLogo">
+                                <a href="Index.html"><img src="Images/homePageLogo.png" alt="Img Not Found"></a>
+                            </div>
+
+                            <div class="navSection">
+                                <div class="mobile-cart"><a href="#">0</a></div>
+                                <input type="checkbox" id="menuToggle">
+                                <label for="menuToggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+                                <nav id="navSection">
+                                    <label for="menuToggle" class="close-icon">&times;</label>
+                                    <ul>
+                                        <li><a href="full-event-schedule.html">Schedule</a></li>
+                                        <li><a href="artist-page.html">Concerts</a></li>
+                                        <li><a href="upcoming-events.html">Sports</a></li>
+                                        <li><a href="order-ticket-without-seat.html">Parties</a></li>
+                                        <li><a href="event-by-category.html">Theater</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="select-seat-2.html">Ticekts</a></li>
+                                        <li class="cart"><a href="#">0</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="mainSection">
+            <section class="section-featured-header all-sports-events">
+                <div class="container">
+                    <div class="section-content">
+                        <h1>All Sports Events</h1>
+                    </div>
+                </div>
+            </section>
+            <section class="section-refine-search">
+                <div class="container">
+                    <div class="row">
+                        <form class="row form-contents">
+                            <div class="keyword prl-15">
+                                <label>Search Keyword</label>
+                                <input type="text" class="form-control hasclear" placeholder="Search">
+                                <span class="clearer" style="display: none;"><img src="Images/clear.png" alt="clear"></span>
+                            </div>
+                            <div class="month prl-15">
+                                <label for="month">Location</label>
+                                <div class="custom-select-wrapper">
+                                    <select id="month" name="month">
+                                        <option>Select Location</option>
+                                        <option>San Francisco</option>
+                                        <option>Foxborough </option>
+                                        <option>Buffalo</option>
+                                        <option>Auburn Hills</option>
+                                    </select>
+                                </div>                                 
+                            </div>
+                            <div class="year prl-15">
+                                <label for="year">Event Date</label>
+                                <div class="custom-select-wrapper">
+                                    <select id="year" name="year">
+                                        <option>Select Date</option>
+                                        <option>August 1st, 2016</option>
+                                        <option>August 2nd, 2016</option>
+                                        <option>August 3rd, 2016</option>
+                                        <option>August 4th, 2016</option>
+                                    </select>               
+                                </div>                         
+                            </div>
+                            <div class="submit prl-15">
+                                <input type="submit" value="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section-search-content">
+                <div class="container">
+                    <div class="row theaterSection">
+                        <div id="secondary" class="prl-15">
+                            <div class="search-filter">
+                                <div class="search-event-title">
+                                    <h2><span>Event</span> Sports </h2>
+                                </div>
+                                <div class="search-filter-delivery">
+                                    <h3>Delivery</h3>
+                                    <div class="checkbox">
+                                        <input id="delivery1" class="styled" type="checkbox" checked="">
+                                        <label for="delivery1">
+                                            All
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="delivery2" class="styled" type="checkbox">
+                                        <label for="delivery2">
+                                            Electronic
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="delivery3" class="styled" type="checkbox">
+                                        <label for="delivery3">
+                                            Instant
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="search-filter-category">
+                                    <h3>Categories</h3>
+                                    <div class="checkbox">
+                                        <input id="category1" class="styled" type="checkbox" checked="">
+                                        <label for="category1">
+                                            All
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="category2" class="styled" type="checkbox">
+                                        <label for="category2">
+                                            Backetball
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="category3" class="styled" type="checkbox">
+                                        <label for="category3">
+                                            Football
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="category4" class="styled" type="checkbox">
+                                        <label for="category4">
+                                            Golf
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="category5" class="styled" type="checkbox">
+                                        <label for="category5">
+                                            Soccer
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="category6" class="styled" type="checkbox">
+                                        <label for="category6">
+                                            Tennis
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="search-filter-seat-features">
+                                    <h3>Seat Features</h3>
+                                    <div class="checkbox">
+                                        <input id="features1" class="styled" type="checkbox" checked="">
+                                        <label for="features1">
+                                            All
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="features2" class="styled" type="checkbox">
+                                        <label for="features2">
+                                            Aisle
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="features3" class="styled" type="checkbox">
+                                        <label for="features3">
+                                            Ex-Obstucted View
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="features4" class="styled" type="checkbox">
+                                        <label for="features4">
+                                            Parking Pass Included
+                                        </label>
+                                    </div>
+                                    <div class="checkbox">
+                                        <input id="features5" class="styled" type="checkbox">
+                                        <label for="features5">
+                                            Wheelchair Accessible
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="search-filter-price">
+                                    <h3>Price</h3>
+                                    <div class="slider-container">
+                                        <div class="range-label min-label">$50</div>
+                                        <div class="range-label max-label">$150</div>
+                                        <div class="range-track"></div>
+                                        <div class="range-fill"></div>
+                                        <div class="range-slider">
+                                            <input type="range" min="0" max="200" value="50">
+                                            <input type="range" min="0" max="200" value="150">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="primary" class="prl-15">
+                            <div class="search-result-header">
+                                <div class="row sortingSection">
+                                    <div class="prl-15">
+                                        <h2>All Sports Events at San Francisco</h2>
+                                        <span>Showing 1-10 of 32 Results</span>
+                                    </div>
+                                    <div class="prl-15">
+                                        <label>Sort By</label>
+                                        <div class="custom-select-wrapper">
+                                            <select name="price" id="price">
+                                                <option>Price: Low-High</option>
+                                                <option>Price: High-Low</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="search-result-item">
+                                <div class="row categorySection">
+                                    <div class="search-result-item-info prl-15">
+                                        <h3>Tennis San Francisco Open</h3>
+                                        <ul class="row eventDetails">
+                                            <li class="col-sm-5 col-lg-6">
+                                                <span>Venue</span>
+                                                Gillette Stadium (Foxborough, MA)
+                                            </li>
+                                            <li class="col-sm-4 col-lg-3">
+                                                <span>Saturday</span>
+                                                July. 30th, 2016
+                                            </li>
+                                            <li class="col-sm-3">
+                                                <span>Time</span>
+                                                07:00 PM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-result-item-price prl-15">
+                                        <span>Price From</span>
+                                        <strong>$101</strong>
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-result-item sold-out">
+                                <div class="row categorySection">
+                                    <div class="search-result-item-info prl-15">
+                                        <h3>Golf Master SF Championship</h3>
+                                        <ul class="row eventDetails">
+                                            <li class="col-sm-5 col-lg-6">
+                                                <span>Venue</span>
+                                                First Niagara Center (Buffalo, NY)
+                                            </li>
+                                            <li class="col-sm-4 col-lg-3">
+                                                <span>Saturday</span>
+                                                August. 1st, 2016 
+                                            </li>
+                                            <li class="col-sm-3">
+                                                <span>Time</span>
+                                                07:00 PM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-result-item-price prl-15">
+                                        <span>Price From</span>
+                                        <strong>$113</strong>
+                                        <a href="#">Sold Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-result-item sale">
+                                <div class="ribbon"><span>Sale</span></div>
+                                <div class="row categorySection">
+                                    <div class="search-result-item-info prl-15">
+                                        <h3>UEFA Champions League final (FC Barcelona v AC Milan)</h3>
+                                        <ul class="row eventDetails">
+                                            <li class="col-sm-5 col-lg-6">
+                                                <span>Venue</span>
+                                                Palace Of Auburn Hills (Auburn Hills, MI)
+                                            </li>
+                                            <li class="col-sm-4 col-lg-3">
+                                                <span>Saturday</span>
+                                                August. 3rd, 2016 
+                                            </li>
+                                            <li class="col-sm-3">
+                                                <span>Time</span>
+                                                07:00 PM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-result-item-price prl-15">
+                                        <span>Price From</span>
+                                        <strong><span>$140</span>$125</strong>
+                                        <a href="#" class="sold-out">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-result-item">
+                                <div class="row categorySection">
+                                    <div class="search-result-item-info prl-15">
+                                        <h3>FA Cup final (Manchester City v Leicester City)</h3>
+                                        <ul class="row eventDetails">
+                                            <li class="col-sm-5 col-lg-6">
+                                                <span>Venue</span>
+                                                First Niagara Center (Buffalo, NY)
+                                            </li>
+                                            <li class="col-sm-4 col-lg-3">
+                                                <span>Saturday</span>
+                                                August. 1st, 2016 
+                                            </li>
+                                            <li class="col-sm-3">
+                                                <span>Time</span>
+                                                07:00 PM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-result-item-price prl-15">
+                                        <span>Price From</span>
+                                        <strong>$140</strong>
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-result-item">
+                                <div class="row categorySection">
+                                    <div class="search-result-item-info prl-15">
+                                        <h3>NBA Finals</h3>
+                                        <ul class="row eventDetails">
+                                            <li class="col-sm-5 col-lg-6">
+                                                <span>Venue</span>
+                                                CONSOL Energy Center (Pittsburgh, PA)
+                                            </li>
+                                            <li class="col-sm-4 col-lg-3">
+                                                <span>Saturday</span>
+                                                August. 5th, 2016 
+                                            </li>
+                                            <li class="col-sm-3">
+                                                <span>Time</span>
+                                                07:00 PM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-result-item-price prl-15">
+                                        <span>Price From</span>
+                                        <strong>$155</strong>
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-result-item sold-out">
+                                <div class="row categorySection">
+                                    <div class="search-result-item-info prl-15">
+                                        <h3>Women's Baseball World Cup	</h3>
+                                        <ul class="row eventDetails">
+                                            <li class="col-sm-5 col-lg-6">
+                                                <span>Venue</span>
+                                                Lincoln Financial Field (Philadelphia, PA)
+                                            </li>
+                                            <li class="col-sm-4 col-lg-3">
+                                                <span>Saturday</span>
+                                                August. 6th, 2016 
+                                            </li>
+                                            <li class="col-sm-3">
+                                                <span>Time</span>
+                                                07:00 PM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-result-item-price prl-15">
+                                        <span>Price From</span>
+                                        <strong>$160</strong>
+                                        <a href="#">Sold Out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-result-item">
+                                <div class="row categorySection">
+                                    <div class="search-result-item-info prl-15">
+                                        <h3>UCI Road World Championships</h3>
+                                        <ul class="row eventDetails">
+                                            <li class="col-sm-5 col-lg-6">
+                                                <span>Venue</span>
+                                                Rose Bowl (Pasadena, CA)
+                                            </li>
+                                            <li class="col-sm-4 col-lg-3">
+                                                <span>Saturday</span>
+                                                August. 20th, 2016 
+                                            </li>
+                                            <li class="col-sm-3">
+                                                <span>Time</span>
+                                                07:00 PM
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-result-item-price prl-15">
+                                        <span>Price From</span>
+                                        <strong>$175</strong>
+                                        <a href="#">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-pagination">
+                                <ul class="pagination">
+                                    <li>
+                                        <a href="#" aria-label="Previous">
+                                            <span><i class="fa fa-long-arrow-left"></i><span class="prevBtn">Previous</span></span>
+                                        </a>
+                                    </li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li class="active"><a href="#">3</a></li>
+                                    <li><a href="#">4</a></li>
+                                    <li><a href="#">5</a></li>
+                                    <li>
+                                        <a href="#" aria-label="Next">
+                                            <span><i class="fa fa-long-arrow-right"></i><span class="nextBtn">Next</span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footerSection" class="site-footer">
+            <div class="top-footer">
+                <div class="container">
+                    <div class="logo-copyright">
+                        <div class="footerLogo">
+                            <a href="#"><img src="Images/footerLogo.png" alt="logo"></a>
+                        </div>
+                        <div class="footer-copyright">
+                            <p>© 2016 MYTICKET.COM. ALL RIGHTS RESEVED</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-1">
+                            <div class="about mb-15">
+                                <h3>About</h3>
+                                <ul>
+                                    <li><a href="#">Our Company</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Advertising</a></li>
+                                    <li><a href="#">Press Room</a></li>
+                                    <li><a href="#">Trademarks</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="support mb-15">
+                                <h3>Support and Contact</h3>
+                                <ul>
+                                    <li><a href="#">Customer Support Contacts</a></li>
+                                    <li><a href="#">Feedback</a></li>
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+                            <div class="social mb-15">
+                                <h3>Stay Connected</h3>
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                            Twitter
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#">
+                                            <i class="fa fa-linkedin-square"></i>
+                                            LinkedIn
+                                        </a>
+                                    </li>
+                                    <li class="google">
+                                        <a href="#">
+                                            <i class="fa fa-google-plus-square"></i>
+                                            Google+
+                                        </a>
+                                    </li>
+                                    <li class="rss">
+                                        <a href="#">
+                                            <i class="fa fa-rss-square"></i>
+                                            RSS
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-2">
+                            <div class="footer-dashboard">
+                                <h3>MyTicket Dashboard</h3>
+                                <ul>
+                                    <li><a href="#">Professional</a></li>
+                                    <li><a href="#">Subscriber Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

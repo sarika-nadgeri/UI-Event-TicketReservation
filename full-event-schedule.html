@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="icon" href="Images/envato_logo.svg" sizes="128x128">
+    <title>MyTicket-Event Ticket Hall Reservation</title>
+</head>
+
+<body>
+    <section id="container">
+        <header id="headerSection">
+            <div id="mainHead">
+                <div class="logoClass">
+                    <a href="Index.html"><img src="Images/envato_logo.svg" alt="Logo Not Found"></a>
+                </div>
+                <div class="buyNowClass">
+                    <button class="buyNowBtn">Buy Now</button>
+                </div>
+            </div>
+            <div id="topHeader">
+                <div class="container">
+                    <div class="row topHeaderClass">
+                        <div class="contactSection">
+                            <a href="tel:62274889767" class="text-light"><i class="fa fa-phone"></i> &nbsp; +62274
+                                889767</a>
+                            <a href="mailto:hello@myticket.com" class="text-light" style="margin-left: 10px;"><i
+                                    class="fa fa-envelope-o"></i> &nbsp;
+                                hello@myticket.com</a>
+                        </div>
+                        <div class="LoginSection">
+                            <span class="signIn" style="color: #ff6600;">SIGN IN</span> &nbsp; | &nbsp;
+                            <span class="signUp">SIGN UP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main-hero-section" class="otherPages">
+                <div id="main-header">
+                    <div class="container">
+                        <div class="head-container">
+                            <div class="homePageLogo">
+                                <a href="Index.html"><img src="Images/homePageLogo.png" alt="Img Not Found"></a>
+                            </div>
+
+                            <div class="navSection">
+                                <div class="mobile-cart"><a href="#">0</a></div>
+                                <input type="checkbox" id="menuToggle">
+                                <label for="menuToggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+                                <nav id="navSection">
+                                    <label for="menuToggle" class="close-icon">&times;</label>
+                                    <ul>
+                                        <li><a href="full-event-schedule.html">Schedule</a></li>
+                                        <li><a href="artist-page.html">Concerts</a></li>
+                                        <li><a href="upcoming-events.html">Sports</a></li>
+                                        <li><a href="order-ticket-without-seat.html">Parties</a></li>
+                                        <li><a href="event-by-category.html">Theater</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="select-seat-2.html">Ticekts</a></li>
+                                        <li class="cart"><a href="#">0</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main id="mainSection">
+            <section class="section-page-header">
+                <div class="container">
+                    <h1 class="entry-title">Full Events Schedules</h1>
+                </div>
+            </section>
+            <section class="section-refine-search">
+                <div class="container">
+                    <div class="row">
+                        <form class="row form-contents">
+                            <div class="keyword prl-15">
+                                <label>Search Keyword</label>
+                                <input type="text" class="form-control hasclear" placeholder="Search">
+                                <span class="clearer" style="display: none;"><img src="Images/clear.png" alt="clear"></span>
+                            </div>
+                            <div class="month prl-15">
+                                <label for="month">Month</label>
+                                <div class="custom-select-wrapper">
+                                    <select id="month" name="month">
+                                      <option value="">Select Month</option>
+                                      <option value="January">January</option>
+                                      <option value="February">February</option>
+                                      <option value="March">March</option>
+                                      <option value="April">April</option>
+                                      <option value="May">May</option>
+                                      <option value="June">June</option>
+                                      <option value="July">July</option>
+                                      <option value="August">August</option>
+                                      <option value="September">September</option>
+                                      <option value="October">October</option>
+                                      <option value="November">November</option>
+                                      <option value="December">December</option>
+                                    </select>
+                                </div>                                 
+                            </div>
+                            <div class="year prl-15">
+                                <label for="year">Year</label>
+                                <div class="custom-select-wrapper">
+                                    <select id="year" name="year">
+                                        <option value="">Select Year</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2025">2025</option>
+                                        <option value="2026">2026</option>
+                                    </select>               
+                                </div>                         
+                            </div>
+                            <div class="submit prl-15">
+                                <input type="submit" value="Search">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="section-full-events-schedule">
+                <div class="container">
+                    <section class="section-calendar-events">
+                        <div class="carousel-container">
+                            <div class="arrow">&#10094;</div>
+                            <div class="carousel">
+                                <div class="monthBox active">
+                                    <span class="month-name">MAY</span>
+                                    <span class="year">2016</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">JUN</span>
+                                    <span class="year">2016</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">JUL</span>
+                                    <span class="year">2016</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">AUG</span>
+                                    <span class="year">2016</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">SEP</span>
+                                    <span class="year">2016</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">OCT</span>
+                                    <span class="year">2016</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">NOV</span>
+                                    <span class="year">2016</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">DEC</span>
+                                    <span class="year">2016</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">JAN</span>
+                                    <span class="year">2017</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">FEB</span>
+                                    <span class="year">2017</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">Mar</span>
+                                    <span class="year">2017</span>
+                                </div>
+                                <div class="monthBox">
+                                    <span class="month-name">APR</span>
+                                    <span class="year">2017</span>
+                                </div>
+                            </div>
+                            <div class="arrow">&#10095;</div>
+                        </div>
+                        <div class="section-content">
+                            <div class="sectionRow">
+                                <div class="primary prl">
+                                    <ul class="nav">
+                                        <li class="active">
+                                            <a href="#">
+                                                <p class="schedule-time">08:00 <strong>AM</strong></p>
+                                                <p class="schedule-title">Kiai Kanjeng Orchestra</p>
+                                                <p class="schedule-ticket-info">18 tickets left</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p class="schedule-time">09:00 <strong>AM</strong></p>
+                                                <p class="schedule-title">Envato Author Meetup</p>
+                                                <p class="schedule-ticket-info">20 tickets left</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p class="schedule-time">10:00 <strong>AM</strong></p>
+                                                <p class="schedule-title">Envato Author Meetup</p>
+                                                <p class="schedule-ticket-info">20 tickets left</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p class="schedule-time">08:00 <strong>AM</strong></p>
+                                                <p class="schedule-title">Envato Author Meetup</p>
+                                                <p class="schedule-ticket-info">20 tickets left</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <p class="schedule-time">09:00 <strong>AM</strong></p>
+                                                <p class="schedule-title">Envato Author Meetup</p>
+                                                <p class="schedule-ticket-info">20 tickets left</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="secondary prl">
+                                    <div class="tab-content">
+                                        <div class="tab-pane active">
+                                            <img src="Images/full-event-schedule-img.jpg" alt="image">
+                                            <div class="full-event-info">
+                                                <div class="full-event-info-header">
+                                                    <div class="info-1">
+                                                        <h2>Kiai Kanjeng Orchestra</h2>
+                                                        <span class="ticket-left-info">18 Tickets Left</span>
+                                                    </div>
+                                                    <div class="info-1">
+                                                        <span class="event-date-info">Tuesday, August 25 2016 | 08:00 AM</span>
+                                                        <span class="event-venue-info">220 Morrissey Blvd. Boston, MA 02125</span>
+                                                    </div>
+                                                </div>
+                                                <div class="full-event-info-content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+                                                    <a class="book-ticket" href="#">Book Ticket</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+        <footer id="footerSection" class="site-footer">
+            <div class="top-footer">
+                <div class="container">
+                    <div class="logo-copyright">
+                        <div class="footerLogo">
+                            <a href="#"><img src="Images/footerLogo.png" alt="logo"></a>
+                        </div>
+                        <div class="footer-copyright">
+                            <p>© 2016 MYTICKET.COM. ALL RIGHTS RESEVED</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-1">
+                            <div class="about mb-15">
+                                <h3>About</h3>
+                                <ul>
+                                    <li><a href="#">Our Company</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                    <li><a href="#">Advertising</a></li>
+                                    <li><a href="#">Press Room</a></li>
+                                    <li><a href="#">Trademarks</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                            <div class="support mb-15">
+                                <h3>Support and Contact</h3>
+                                <ul>
+                                    <li><a href="#">Customer Support Contacts</a></li>
+                                    <li><a href="#">Feedback</a></li>
+                                    <li><a href="#">Help</a></li>
+                                    <li><a href="#">Sitemap</a></li>
+                                </ul>
+                            </div>
+                            <div class="social mb-15">
+                                <h3>Stay Connected</h3>
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fa fa-facebook"></i>
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                            Twitter
+                                        </a>
+                                    </li>
+                                    <li class="linkedin">
+                                        <a href="#">
+                                            <i class="fa fa-linkedin-square"></i>
+                                            LinkedIn
+                                        </a>
+                                    </li>
+                                    <li class="google">
+                                        <a href="#">
+                                            <i class="fa fa-google-plus-square"></i>
+                                            Google+
+                                        </a>
+                                    </li>
+                                    <li class="rss">
+                                        <a href="#">
+                                            <i class="fa fa-rss-square"></i>
+                                            RSS
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-2">
+                            <div class="footer-dashboard">
+                                <h3>MyTicket Dashboard</h3>
+                                <ul>
+                                    <li><a href="#">Professional</a></li>
+                                    <li><a href="#">Subscriber Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>

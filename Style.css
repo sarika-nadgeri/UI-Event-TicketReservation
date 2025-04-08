@@ -1,0 +1,3696 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:sans-serif;
+    padding-top: 54px;
+    font-size: 12px;
+    color: #757575;
+}
+
+a{
+    text-decoration: none;
+}
+
+#container{
+    width: 100%;
+}
+
+/* Default for small devices and up (≥576px) */
+.col-sm-10 {
+    width: 83.3333%;
+    float: left;
+}
+
+.col-sm-2 {
+    width: 16.6667%;
+    float: left;
+}
+
+/* Clearfix (optional if layout breaks) */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+    .col-sm-10,
+    .col-sm-2 {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Small devices (landscape phones, ≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .col-sm-10 {
+        width: 100%;
+    }
+
+    .col-sm-2 {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, ≥768px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .col-sm-10 {
+        width: 100%;
+    }
+
+    .col-sm-2 {
+        width: 100%;
+    }
+}
+
+/* Large devices (desktops, ≥992px) */
+@media (min-width: 992px) {
+    .col-sm-10 {
+        width: 83.3333%;
+    }
+
+    .col-sm-2 {
+        width: 16.6667%;
+    }
+}
+
+#mainHead {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 54px;
+    background-color: #262626;
+    z-index: 100;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#mainHead .logoClass img{
+    width: 152px;
+    height: 18px;
+}
+
+.buyNowClass, .logoClass{
+    padding: 0px 20px;
+}
+
+.buyNowBtn{
+    color: #fff;
+    background-color: #82b440;
+    box-shadow: 1 2px 0 #6f9a37;
+    font-size: 14px;
+    padding: 5px 20px;
+    line-height: 1.5;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#topHeader{
+    background: #161616;
+    padding: 10px 0px;
+}
+
+.contactSection {
+    /* display: flex;
+    gap: 20px;
+    align-items: center; */
+    float: left;
+}
+
+.contactSection a{
+    color: #B3B3B3;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.contactSection a i {
+    color: #ad4a08;
+}
+
+.LoginSection{
+    color: #B3B3B3;
+    font-size: 12px;
+    padding: 0 10px;
+    font-weight: 700;
+    cursor: pointer;
+    float: right;
+}
+
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    /* padding: 0 15px; */
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.head-container:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    left: 0px;
+    right: 0;
+    background: #fff;
+}
+
+#main-header {
+    padding: 20px 0;
+}
+
+.homePageLogo img {
+    height: 50px;
+}
+  
+.navSection {
+    position: relative;
+    padding: 0 15px;
+}
+  
+#menuToggle {
+    display: none;
+}
+  
+.mobile-cart {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+  
+/* Navigation Styles */
+
+#navSection .cart {
+    margin: 0 0 0 20px;
+}
+  
+#navSection .cart a {
+    display: block;
+    font-weight: bold;
+    background-color: #f89406;
+    background-size: 25px 23px;
+    border: 1px solid #f89406;
+    border-radius: 20px;
+    margin: 6px 0;
+    padding: 7px 20px;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    width: 90px;
+    position: relative;
+    font-size: 18px;
+} 
+
+#navSection .cart a:before {
+    display: block;
+    content: "\f23d";
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: 7px;
+    right: 20px;
+    font-size: 18px;
+}
+
+/* .close-icon {
+    color: #fff;
+    font-size: 28px;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+} */
+
+
+/* #navSection {
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 250px;
+    height: 100%;
+    background-color: #111;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    padding-top: 50px;
+}
+
+#navSection ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0 20px;
+} */
+
+/* #navSection ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 0;
+    display: block;
+    border-bottom: 1px solid #333;
+}
+
+#menuToggle:checked ~ nav#navSection {
+    right: 0;
+} */
+
+/* Default: Desktop styles */
+#navSection {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+}
+
+#navSection ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navSection ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    border: none;
+}
+
+/* Hide close icon on desktop */
+.close-icon {
+    display: none;
+}
+
+.homePageLogo img {
+    max-height: 35px;
+    width: auto;
+}
+
+#main-hero-section{
+    background-size: cover;
+    height: 650px;
+    background: linear-gradient(135deg, rgba(217, 30, 24, .9) 0%, rgba(255, 102, 0, .9) 100%),url(Images/hero-1-img.jpg) no-repeat center center;
+}
+
+#main-hero-section.otherPages{
+    height: auto;
+}
+
+#heroSection{
+    margin-top: 150px;
+}
+
+.hero-content {
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+}
+
+.hero-content h1{
+    font-size: 36px;
+    margin: 0px 0px 20px;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-content p{
+    font-size: 26px;
+    margin: 0px 0px 45px;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+}
+
+.hero-content .hero-search {
+    margin: 0 0 45px;
+}
+
+.hero-location p {
+    font-size: 15px;
+}
+
+.hero-location p a {
+    font-size: 12px;
+    opacity: .6;
+    text-decoration: underline;
+    margin: 0 5px;
+    color: #fff;
+}
+
+.hero-content .hero-search input[type="text"] {
+    border: 2px solid #fff;
+    padding: 25px 80px 25px 45px;
+    color: #fff;
+    font-size: 22px;
+    /* font-family: "Montserrat-Light"; */
+    /* width: 710px; */
+    width: 100%;
+    background: rgba(240, 243, 243, 0.2) url(Images/search.png) no-repeat 93% center;
+    border-radius: 50px;
+    margin: 0 auto;
+}
+
+input[type="text"]:focus-visible {
+    outline:none;
+}
+
+.hero-content .hero-search input[type="text"]:focus-visible {
+    outline:none;
+}
+
+.hero-content .hero-search input::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+#section-todays-schedule{
+    background: #161616;
+    padding: 70px 0;
+}
+
+#section-todays-schedule .section-header {
+    margin: 0 0 35px;
+}
+
+#section-todays-schedule .section-header h2 {
+    font-size: 22px;
+    line-height: 22px;
+    color: #ff6600;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    padding: 0 0 0 25px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+#section-todays-schedule .section-header h2:before {
+    display: block;
+    width: 5px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    background: #ff6600;
+}
+
+#section-todays-schedule .section-header .todays-date {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ff6600;
+    float: right;
+    padding-left: 15px;
+}
+
+#section-todays-schedule .section-header .todays-date i {
+    margin: 0 5px 0 0;
+    font-size: 18px;
+}
+
+#section-todays-schedule .section-content {
+    position: relative;
+    padding-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    border-bottom: 1px solid #464646;
+    
+}
+#section-todays-schedule .scroll-wrapper {
+    overflow-x: auto;
+}
+
+#section-todays-schedule .section-content ul{
+    list-style: none;
+    /* margin: 0 -241px 0 0; */
+    margin: 0 -32767px 0 0;
+    float: left;
+}
+
+#section-todays-schedule .section-content ul li.event-1 {
+    padding: 0 25px 20px 0;
+    margin: 0 0 0 30px;
+}
+
+#section-todays-schedule .section-content ul li {
+    float: left;
+    padding: 0 25px 20px;
+    position: relative;
+    height: 93px;
+}
+
+#section-todays-schedule .section-content ul li:not(:last-child):after {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    color: #464646;
+    font-size: 14px;
+}
+
+#section-todays-schedule .section-content .event-time {
+    font-size: 24px;
+    display: block;
+    color: #d7d7d7;
+    font-weight: 300;
+}
+
+#section-todays-schedule .section-content .event-time strong {
+    font-size: 12px;
+    color: #d7d7d7;
+}
+
+#section-todays-schedule .section-content .event-name {
+    font-size: 12px;
+    color: #d7d7d7;
+    display: block;
+    margin: 0 0 10px;
+    letter-spacing: 1px;
+}
+
+#section-todays-schedule .section-content .get-ticket {
+    font-size: 10px;
+    padding: 5px 15px;
+    background: #ff6600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+#section-todays-schedule .section-content .get-ticket:hover {
+    background: #fff;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#section-todays-schedule .section-content .get-ticket:hover a{
+    color: #ff6600;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#section-todays-schedule .section-content .get-ticket a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#section-todays-schedule .section-content .sold-ticket {
+    font-size: 10px;
+    padding: 5px 15px;
+    background: none;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid #ff6600;
+    border-radius: 20px;
+    font-weight: 700;
+    display: inline-block;
+    pointer-events: none;
+    cursor: default;
+}
+
+#section-todays-schedule .section-content .sold-ticket a{
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.section-upcoming-events .eventList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 40px; */
+    text-align: center;
+    color: #fff;
+}
+
+.eventClass{
+    position: relative;
+}
+
+.eventList img{
+    width: 100%;
+}
+
+.section-upcoming-events .eventsSection .eventList .date {
+    padding: 15px;
+    background: rgba(36, 36, 36, 0.8);
+    position: absolute;
+    top: 0;
+    left: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.section-upcoming-events .section-content .date a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section-upcoming-events .section-content .date .day {
+    font-size: 30px;
+    display: block;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 5px;
+}
+
+.section-upcoming-events .section-content .date .month {
+    font-size: 10px;
+    display: block;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 5px;
+}
+
+.section-upcoming-events .section-content .date .year {
+    font-size: 10px;
+    display: block;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-upcoming-events .section-content .info {
+    padding: 50px 20px 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(253, 253, 253, 0) 1%, rgba(28, 28, 28, 1) 100%);
+}
+
+.section-upcoming-events .section-content .info p {
+    font-size: 16px;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    /* width: 65%; */
+    float: left;
+    margin: 0;
+    line-height: 20px;
+}
+
+.section-upcoming-events .section-content .info .get-ticket {
+    font-size: 12px;
+    line-height: 12px;
+    color: #fff;
+    padding: 10px 15px;
+    background: #ff6600;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    display: inline-block;
+    width: auto;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+}
+
+.section-upcoming-events .section-content .info .get-ticket:hover {
+    background: #fff;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.section-upcoming-events .section-content .info .get-ticket:hover{
+    color: #ff6600;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.section-upcoming-events .section-content .info p span {
+    display: block;
+    color: #b3b3b3;
+    font-size: 12px;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-upcoming-events {
+    padding: 70px 0 35px;
+    background: #fff;
+}
+
+.section-upcoming-events .section-header {
+    overflow: hidden;
+    margin: 0 0 40px;
+    padding: 0 0 0 25px;
+}
+
+.section-header h2 {
+    font-size: 22px;
+    line-height: 22px;
+    color: #373737;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+    margin: 0 0 25px;
+    font-weight: 700;
+    position: relative;
+    padding: 0 0 0 10px;
+}
+
+.section-header h2:before {
+    display: block;
+    width: 5px;
+    height: 16px;
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 4px;
+    background: #ff6600;
+}
+
+.section-upcoming-events .section-header p {
+    color: #6f6f6f;
+    font-size: 13px;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    line-height: 22px;
+    padding: 0 2px;
+    float: left;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.section-upcoming-events .section-header a {
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    background: #fff;
+    display: inline-block;
+    text-decoration: none;
+    float: right;
+    font-size: 12px;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    padding: 13px 25px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.section-event-category {
+    background: #fff;
+    padding: 35px 15px 40px;
+}
+
+.categoryList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.categoryList .category{
+    position: relative;
+}
+
+.section-event-category .categoryList .category a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 26px;
+    text-align: center;
+}
+
+.section-event-category .categoryList .category a span {
+    display: block;
+    height: 26px;
+    width: 80%;
+    line-height: 26px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+}
+
+.category {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.category img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+
+/* Overlay gradient */
+.category a::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    transition: 0.3s ease-in-out;
+}
+
+.category-1 a::before {
+    background: linear-gradient(to right, rgba(46, 204, 113, 0.9), rgba(27, 188, 155, 0.9)); 
+}
+
+.category-2 a::before {
+    background: linear-gradient(to right, rgba(192,57,43,.9) 0%,rgba(210,77,87,.9) 100%); 
+}
+
+.category-3 a::before {
+    background: linear-gradient(to right,  rgba(102,51,153,.9) 0%,rgba(155,89,182,.9) 100%);
+}
+
+.category-4 a::before {
+    background: linear-gradient(to right,  rgba(211,84,0,.9) 0%,rgba(248,148,6,.9) 100%); 
+}
+
+.category-5 a::before {
+    background: linear-gradient(to right,  rgba(68,108,179,.9) 0%,rgba(89,171,227,.9) 100%);
+}
+
+.category-6 a::before {
+    background: linear-gradient(to right,  rgba(219,10,91,.9) 0%,rgba(210,82,127,.9) 100%); 
+}
+
+.category-1:hover a::before {
+    background: linear-gradient(to right,  rgba(46,204,113,.5) 0%,rgba(27,188,155,.5) 100%);
+}
+
+.category-2:hover a::before {
+    background: linear-gradient(to right, rgba(192,57,43,.5) 0%,rgba(210,77,87,.5) 100%);
+}
+
+.category-3:hover a::before {
+    background: linear-gradient(to right,  rgba(102,51,153,.5) 0%,rgba(155,89,182,.5) 100%);
+}
+
+.category-4:hover a::before {
+    background: linear-gradient(to right,  rgba(211,84,0,.5) 0%,rgba(248,148,6,.5) 100%); 
+}
+
+.category-5:hover a::before {
+    background: linear-gradient(to right,  rgba(68,108,179,.5) 0%,rgba(89,171,227,.5) 100%);
+}
+
+.category-6:hover a::before {
+    background: linear-gradient(to right,  rgba(219,10,91,.5) 0%,rgba(210,82,127,.5) 100%);
+}
+
+.section-recent-videos {
+    padding: 70px 15px;
+}
+
+.recent-video-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.recent-video img{
+    width: 100%;
+}
+
+.section-recent-videos .section-content .video-title a {
+    color: #242424;
+    font-size: 14px;
+    line-height: 22px;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 0;
+    position: relative;
+    display: block;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.section-recent-videos .section-content .video-title a:before {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background: #ff6600;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+
+.section-recent-videos .section-content .video {
+    position: relative;
+}
+
+.section-recent-videos .section-content .video-player {
+    background: rgba(36, 36, 36, 0.8);
+    padding: 15px 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 12px;
+}
+
+.section-recent-videos .section-content .video-player a {
+    color: #d7d7d7;
+    float: left;
+}
+
+.section-recent-videos .section-content .video-player span {
+    color: #fff;
+    float: right;
+}
+
+.section-stats {
+    padding: 100px 0;
+    background: linear-gradient(rgba(36,36,36, 0.8),rgba(36,36,36, 0.8)) ,url(Images/stats.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.countSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.countSection div {
+    padding: 0px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.count {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.countSection hr {
+    background: #fff;
+    height: 2px;
+    width: 45px;
+    margin: 30px auto;
+}
+
+.section-stats .countSection p {
+    font-size: 19px;
+    line-height: 19px;
+    margin: 0;
+    text-transform: uppercase;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-call-to-action .section-content {
+    padding: 50px;
+    background: linear-gradient(rgba(230, 99, 13, .85), rgba(230, 99, 13, .85)) ,url(Images/share-action.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.section-call-to-action .section-content h3 {
+    /* font-family: "Champagne-Limousines-Bold"; */
+    font-size: 35px;
+    margin: 0 0 5px;
+}
+
+.section-call-to-action .section-content p {
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    margin: 0;
+}
+
+.section-call-to-action .section-content .shareExperience, .learnMore{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-call-to-action .section-content .action-btn {
+    display: block;
+    background: #fff;
+    border-radius: 5px;
+    color: #ff6600;
+    font-size: 19px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+    padding: 20px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.section-call-to-action .section-content .action-btn:hover {
+    color: #fff;
+    background: #ff6600;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.section-latest {
+    padding: 70px 0;
+    background: #fff;
+}
+
+.section-latest .latestThings{
+    display: grid;
+    grid-template-columns: 2.3fr 1fr;
+    /* gap: 40px; */
+    color: #fff;
+}
+
+.latest-news, .latest-tweets{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.latest-news .section-content, .latest-tweets .section-content{
+    margin-left: -40px;
+}
+
+.section-latest .latest-news .news-item {
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.section-latest .latest-news .news-item-img {
+    position: relative;
+}
+
+.section-latest .latest-news .news-item-img, .section-latest .latest-news .news-item-info{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-latest .latest-news .news-item-img .date {
+    padding: 15px;
+    background: rgba(255, 102, 0, .7);
+    position: absolute;
+    top: 0;
+    left: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.section-latest .latest-news .news-item-img .date a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.section-latest .latest-news .news-item-img .date .day {
+    font-size: 30px;
+    display: block;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 5px;
+}
+
+.section-latest .latest-news .news-item-img .date .month {
+    font-size: 10px;
+    display: block;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 5px;
+}
+
+.section-latest .latest-news .news-item-img .date .year {
+    font-size: 10px;
+    display: block;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-latest .latest-news .news-item-img img {
+    /* width: 100%; */
+    /* max-width: 100%; */
+    height: auto;
+    vertical-align: middle;
+}
+
+.section-latest .latest-news .news-item-info h3 {
+    margin: 0 0 20px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+}
+
+.section-latest .latest-news .news-item-info h3 a {
+    color: #373737;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section-latest .latest-news .news-item-info .meta-data {
+    display: block;
+    color: #6f6f6f;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 2px 20px;
+}
+
+.section-latest .latest-news .news-item-info .meta-data a {
+    color: #ff6600;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.section-latest .latest-news .news-item-info p {
+    color: #6f6f6f;
+    font-size: 13px;
+    line-height: 21px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 2px;
+}
+
+
+.section-latest .latest-tweets .twitter-header {
+    padding: 20px;
+    background: #f8f8f8;
+    margin: 0 0 30px;
+}
+
+.section-latest .latest-tweets .twitter-header .twitter-name {
+    float: left;
+    width: 70%;
+}
+
+.section-latest .latest-tweets .twitter-header .twitter-name img {
+    float: left;
+    margin: 0 20px 0 0;
+}
+
+.section-latest .latest-tweets .twitter-header .twitter-name strong {
+    color: #4e4e4e;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0;
+    display: block;
+}
+
+.section-latest .latest-tweets .twitter-header .twitter-name span {
+    color: #6f6f6f;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 0;
+    display: block;
+}
+
+.section-latest .latest-tweets .twitter-header .twitter-btn {
+    text-align: right;
+    margin: 15px 0 0;
+}
+
+.section-latest .latest-tweets .twitter-header .twitter-btn a {
+    color: #fff;
+    background: #41c3ff;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    border: 1px solid #41c3ff;
+}
+
+.section-latest .latest-tweets .tweet-list {
+    overflow: hidden;
+}
+
+.section-latest .latest-tweets .tweet-list .tweet-item{
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.section-latest .latest-tweets .tweet-list p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #6f6f6f;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0 -15px 0 0;
+}
+
+.section-latest .latest-tweets .tweet-list p a {
+    font-size: 12px;
+    color: #ff6600;
+}
+
+.section-latest .latest-tweets .tweet-list span {
+    color: #b3b3b3;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    display: block;
+    text-align: right;
+    margin: 0 0 0 -15px;
+}
+
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px;
+    padding: 0px 15px;
+}
+
+.pagination>li {
+    display: inline;
+}
+
+.section-latest .latest-news .pagination > li.active > a, .section-latest .latest-news .pagination > li:hover > a {
+    background-color: #ff6600;
+    color: #fff;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.section-latest .latest-news .pagination > li > a, .section-latest .latest-news .pagination > li > span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #fff;
+    border: 1px solid #ff6600;
+    color: #ff6600;
+    float: left;
+    margin: 0 10px 0 0;
+    padding: 5px 0;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+}
+.section-video-parallax {
+    padding: 100px 0;
+    background: linear-gradient(rgba(31, 31, 31, .8), rgba(31, 31, 31, .8)), url(Images/video-parallax.jpg) no-repeat fixed center center;
+    background-size: cover;
+    position: relative;
+}
+
+.section-video-parallax .section-content {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    width: 69%;
+    margin: 0 auto;
+    /* font-family: "Montserrat-Bold"; */
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-video-parallax .section-content h2 {
+    font-size: 55px;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+.section-video-parallax .section-content p {
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 0 0 20px;
+}
+
+.section-video-parallax .section-content i{
+    color: #a0a4a6;
+    font-size: 70px;
+}
+
+.section-sponsors {
+    padding: 70px 0;
+    background: #fff;
+}
+
+.sponsorsList{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.sponsorsList .listItem{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 0 30px;
+    text-align: center;
+}
+
+.sponsorsList img{
+    width: 100%;
+}
+
+.section-newsletter {
+    padding: 90px 0;
+    background: linear-gradient(rgba(255, 102, 0, 0.9), rgba(255, 102, 0, 0.9)), 
+                url(Images/newsletterBg.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.section-newsletter .section-content {
+    text-align: center;
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section-newsletter .section-content h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.section-newsletter .section-content p {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0 0 30px;
+}
+
+.section-newsletter .section-content .newsletter-form input[type="email"] {
+    background: none;
+    font-size: 15px;
+    border: 2px solid #fff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    margin: 0 5px 0 0;
+    width: 50%;
+    height: 53px;
+    color: #fff;
+}
+
+.newsletter-form input[type="email"]:focus-visible {
+    outline:none;
+}
+
+.newsletter-form input::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.newsletter-form input[type="submit"] {
+    background: #fff;
+    color: #ff6600;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 50px;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    height: 53px;
+    cursor: pointer;
+}
+
+.newsletter-form input[type="submit"]:hover {
+    background: #ff6600;
+    color: #fff;
+    transition: all 1s ease-in-out;
+}
+
+/* footer section css */
+
+/* General Footer Styling */
+.site-footer {
+    background-color: #1c1c1c;
+    color: #ccc;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.site-footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Top Footer */
+.top-footer {
+    background: #1f1f1f;
+    padding: 30px 0;
+    border-top: 8px solid #4e4e4e;
+    border-bottom: 1px solid #111;
+}
+
+.top-footer .footerLogo a img {
+    max-height: 35px;
+    width: auto;
+}
+
+.top-footer p {
+    margin: 10px 0px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Main Footer Layout */
+.main-footer {
+    background: #1f1f1f;
+    border-top: 1px solid #474747;
+    border-bottom: 8px solid #4e4e4e;
+    padding: 30px 0;
+}
+
+.logo-copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-1 h3 {
+    float: left;
+    margin: 0 20px 0 0;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-1, .footer-2 {
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+}
+
+.footer-1 {
+    width: 75%;
+}
+
+.footer-2 {
+    width: 23%;
+    border-left: 1px solid #333;
+    padding-left: 20px;
+}
+
+.footer-2 h3 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-2 ul li a {
+    color: #ccc;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    margin: 0 0 15px;
+}
+
+.footer-1 ul,
+.footer-2 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-1 ul li,
+.footer-2 ul li {
+    display: inline;
+    margin-right: 0px;
+}
+
+.footer-1 .about ul li:not(:last-child)::after, .footer-1 .support ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 5px;
+    color: #CCCCCC;
+}
+
+.footer-1 ul li a {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 11px;
+    padding: 0px 0px;
+    font-weight: 600;
+}
+
+.footer-1 ul li a:hover, .footer-2 ul li a:hover { 
+    text-decoration: none;
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+/* Social Section */
+
+.social ul li a i {
+    width: 20px;
+    height: 20px;
+    line-height: 9px;
+    font-size: 13px;
+    text-align: center;
+    margin: 0 7px 0 0;
+}
+
+.social ul {
+    margin-top: 10px;
+}
+
+.social ul li {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.social a i {
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 2px;
+    color: #fff;
+}
+
+.social .facebook i {
+    background: #2c4aa0;
+}
+
+.social .twitter i {
+    background-color: #00b7f1;
+}
+
+.social .linkedin i {
+    background-color: #0076a3;
+}
+
+.social .google i {
+    background-color: #c71619;
+}
+
+.social .rss i {
+    background-color: #ff6600;
+}
+
+.section-gallery {
+    padding: 70px 0;
+    background: #373737;
+}
+
+.section-gallery h1 {
+    color: #fafafa;
+    font-size: 33px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Bold"; */
+}
+
+.section-gallery .gallery-list {
+    padding: 70px 0 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.section-gallery .gallery-list .gallery-img {
+    margin: 0 0 30px;
+    padding: 0px 15px;
+    position: relative;
+}
+
+.section-gallery .gallery-list .gallery-img img{
+    width: 100%;
+}
+
+.section-gallery .gallery-list .gallery-img a:hover img {
+    outline: 8px solid #ff6600;
+    outline-offset: -8px;
+}
+
+.section-gallery .gallery-list .gallery-img:hover a:before {
+    display: block;
+}
+.section-gallery .gallery-list .gallery-img a:before {
+    content: "VIEW";
+    color: #fff;
+    width: 118px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    background: rgba(255, 102, 0, 0.9);
+    border-radius: 50px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: none;
+}
+
+.gallery-pagination {
+    text-align: center;
+}
+
+.gallery-pagination .pagination {
+    display: inline-block;
+    background: #242424;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.gallery-pagination .pagination li {
+    display: inline-block;
+}
+
+.gallery-pagination .pagination > li:first-child > a, .gallery-pagination .pagination > li:last-child > a {
+    padding: 0;
+    border: none;
+    margin: 10px 0;
+    width: auto;
+    height: auto;
+    line-height: auto;
+    border-radius: 0;
+    background: none !important;
+    color: #dedede !important;
+}
+.gallery-pagination .pagination > li > a {
+    font-size: 14px;
+    color: #dedede;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    border: none;
+    margin: 10px 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    background: #242424;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+.gallery-pagination .pagination > li > a > span {
+    padding: 25px;
+}
+
+.gallery-pagination .pagination > li > a > span > i {
+    margin: 0 5px;
+}
+
+.gallery-pagination .pagination > li.active > a, .gallery-pagination .pagination > li:hover > a {
+    background: #ff6600;
+    color: #dedede;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.section-page-header {
+    background: #fafafa;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
+    margin: 0;
+    padding: 40px 15px;
+}
+
+
+.section-page-header .entry-title {
+    margin: 0;
+    font-size: 28px;
+    color: #b3b3b3;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    padding: 0;
+    line-height: normal;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0 0 70px;
+  }
+  
+  .arrow {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+  }
+  
+  .monthBox {
+    min-width: 140px;
+    height: 140px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #aaa;
+    flex-shrink: 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .monthBox:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+  }
+  
+  .monthBox.active {
+    color: #000;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .month-name {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .monthBox .year {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+.section-featured-header.order-tickets-without-seat {
+    /* min-height: 322px; */
+    background: linear-gradient(135deg, rgba(41, 41, 41, 0.8) 0%, rgba(41, 41, 41, 0.8) 100%), url(Images/page-featured-img-order-ticket.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.section-featured-header.order-tickets-without-seat .section-content {
+    text-align: center;
+    position: relative;
+    padding: 80px 0;
+}
+
+.section-featured-header.order-tickets-without-seat .section-content p {
+    color: #dedede;
+    font-size: 20px;
+    margin: 0;
+}
+
+.section-featured-header.order-tickets-without-seat .tickets-left {
+    font-size: 18px;
+    line-height: 18px;
+    color: #fafafa;
+    border: 1px solid #fafafa;
+    border-radius: 50px;
+    padding: 10px 15px;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    display: inline-block;
+    margin: 20px 0 0;
+}
+
+.section-featured-header.order-tickets-without-seat .tickets-left i {
+    margin: 0 5px 0 0;
+}
+
+.section-featured-header.order-tickets-without-seat .section-content p strong {
+    font-size: 45px;
+    line-height: 45px;
+    display: block;
+    font-weight: 700;
+    /* font-family: "Montserrat-Bold"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 0 0;
+    color: #fff;
+}
+
+.section-featured-header.order-tickets-without-seat .section-content p span {
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 15px 0 0;
+    color: #dedede;
+}
+
+.section-page-content {
+    padding: 70px 0;
+    background: #fff;
+}
+
+.section-choose-how-many-tickets {
+    padding: 60px 0;
+}
+
+.section-choose-how-many-tickets .ticket-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.section-choose-how-many-tickets .ticket-nav li {
+    display: inline-block;
+    /* margin: 0 20px; */
+    vertical-align: bottom;
+    margin: 0 10px 20px;
+}
+
+.section-choose-how-many-tickets .ticket-nav li a {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #b3b3b3;
+    background: #f8f8f8;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    position: relative;
+    color: #b3b3b3;
+}
+
+.section-choose-how-many-tickets .ticket-nav li a span {
+    font-size: 70px;
+    line-height: 70px;
+    display: block;
+    margin: 0 0 20px;
+}
+
+.section-choose-how-many-tickets .ticket-nav li a i {
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #ff6600;
+}
+
+.section-choose-how-many-tickets .ticket-nav li a:hover i {
+    color: #fff;
+}
+
+.section-choose-how-many-tickets .ticket-nav li.selected a, .section-choose-how-many-tickets .ticket-nav li a:hover {
+    border: 1px solid #ff6600;
+    background: #ff6600;
+    color: #fff;
+    transition: right 0.3s ease-in-out;
+}
+
+.section-artist-featured-header {
+    background: linear-gradient(135deg, rgba(41, 41, 41, 0.8) 0%, rgba(41, 41, 41, 0.8) 100%), url(Images/page-featured-img-artist.jpg) no-repeat center center;
+    background-size: cover;
+    /* min-height: 322px; */
+    position: relative;
+}
+
+.section-artist-featured-header .section-content {
+    padding: 140px 0 150px;
+    text-align: left;
+    position: relative;
+}
+
+.section-artist-featured-header .section-content h1 {
+    color: #fff;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    line-height: 100%;
+    margin: 0 0 15px;
+}
+
+.section-artist-featured-header .section-content p {
+    color: #fff;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 100%;
+    margin: 0;
+}
+
+.section-artist-content {
+    background: #f8f8f8;
+    padding: 70px 0;
+}
+
+.artist-content-list{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* align-items: center; */
+}
+  
+.artist-content-list #primary, .artist-content-list #secondary{
+    padding: 0 15px;
+}
+
+.section-artist-content .artist-event-item {
+    padding: 30px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 0 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.artist-event-item-info-list{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* align-items: center; */
+}
+
+.artist-event-item-info, .artist-event-item-price{
+    padding: 0px 5px;
+}
+
+.section-artist-content .artist-event-item .artist-event-item-info h3 {
+    font-size: 18px;
+    color: #6f6f6f;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+    padding: 0 0 25px;
+    margin: 0 0 15px;
+    border-bottom: 1px solid #dedede;
+}
+
+.section-artist-content .artist-event-item .artist-event-item-info ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr;
+}
+
+.section-artist-content .artist-event-item .artist-event-item-info ul li {
+    font-size: 13px;
+    padding: 0 15px;
+    color: #6f6f6f;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+}
+
+.section-artist-content .artist-event-item .artist-event-item-info ul li span {
+    font-size: 13px;
+    color: #6f6f6f;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 15px;
+    display: block;
+}
+
+.section-artist-content .artist-event-item .artist-event-item-info ul li span.location {
+    font-size: 13px;
+    color: #6f6f6f;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 15px 0 0;
+    display: block;
+}
+
+.section-artist-content .artist-event-item .artist-event-item-price span {
+    display: block;
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 14px;
+    /* font-family: "Montserrat-Light"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 15px;
+}
+
+.section-artist-content .artist-event-item .artist-event-item-price strong {
+    display: block;
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 28px;
+    /* font-family: "Montserrat-Bold"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 15px;
+}
+
+.section-artist-content .artist-event-item .artist-event-item-price a {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+    padding: 14px 22px;
+    background: #ff6600;
+    border-radius: 5px;
+    border: 1px solid #ff6600;
+}
+
+.artist-event-item-price{
+    text-align: center;
+}
+
+.section-artist-content .artist-event-item .artist-event-item-price a:hover {
+    color: #ff6600;
+    background: #fff;
+}
+
+.section-artist-content .artist-details {
+    background: #fff;
+    border-radius: 5px;
+    padding: 0 0 30px;
+    margin: 0 0 35px;
+}
+
+.section-artist-content .artist-details img {
+    display: block;
+    margin: 0 0 30px;
+    width: 100%;
+}
+
+.section-artist-content .artist-details .artist-details-title {
+    margin: 0 0 38px;
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+.section-artist-content .artist-details .artist-details-title h3 {
+    font-size: 22px;
+    color: #6f6f6f;
+    margin: 0;
+    float: left;
+}
+
+.section-artist-content .artist-details .artist-details-title a {
+    font-size: 13px;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+    border-radius: 5px;
+    margin: 0;
+    float: right;
+    padding: 8px 25px;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+}
+
+.section-artist-content .artist-details .artist-details-info {
+    padding: 0 30px;
+}
+
+.section-artist-content .artist-details .artist-details-info h4 {
+    font-size: 16px;
+    color: #6f6f6f;
+    margin: 0 0 25px;
+}
+
+.section-artist-content .artist-details .artist-details-info p {
+    color: #b3b3b3;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+}
+
+.section-artist-content .artist-details .artist-details-title a:hover {
+    background: #ff6600;
+    color: #fff;
+}
+
+.section-artist-content .related-artist {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.section-artist-content .related-artist > h3 {
+    font-size: 17px;
+    padding: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dedede;
+}
+
+.section-artist-content .related-artist .related-artist-list {
+    background: #fff;
+    padding: 30px 15px;
+}
+
+.section-artist-content .related-artist .related-artist-list .related-artist-item {
+    overflow: hidden;
+    margin: 0 0 30px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.related-artist-img, .related-artist-info{
+    padding: 0px 15px;
+}
+
+.section-artist-content .related-artist .related-artist-img img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+}
+
+.section-artist-content .related-artist .related-artist-info h4 {
+    margin: 0 0 15px;
+}
+
+.section-artist-content .related-artist .related-artist-info h4 a {
+    font-size: 16px;
+    color: #6f6f6f;
+    display: inline-block;
+}
+
+.section-artist-content .related-artist .related-artist-info > a {
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.section-artist-content .related-artist .related-artist-info > a:hover {
+    background: #ff6600;
+    color: #fff;
+}
+
+.prl-15{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section-refine-search .keyword {
+    position: relative;
+}
+
+.section-refine-search {
+    padding: 40px 0;
+  }
+  
+  .section-refine-search .form-contents {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    align-items: end;
+  }
+  
+.section-refine-search label {
+    font-size: 17px;
+    font-weight: 700;
+    display: block;
+    color: #4e4e4e;
+    /* font-family: "Montserrat-Regular"; */
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+  
+.section-refine-search input[type="text"] , 
+.section-refine-search select {
+    border: 2px solid #dedede;
+    border-radius: 4px;
+    padding: 0 27px;
+    height: 55px;
+    line-height: 51px;
+    /* height: auto; */
+    width: 100%;
+    color: #b3b3b3;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+}
+
+select {
+    border: 2px solid #dedede;
+    border-radius: 4px;
+    padding: 0 27px;
+    height: 55px;
+    line-height: 51px;
+    /* height: auto; */
+    width: 100%;
+    color: #b3b3b3;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+}
+
+.section-refine-search select {
+    appearance: none;
+    cursor: pointer;
+}
+
+select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.custom-select-wrapper {
+    position: relative;
+    /* display: inline-block; */
+    /* width: 200px;  */
+}
+
+.custom-select-wrapper::after {
+    /* content: ""; */
+    content: "\f107";
+    font-family: 'FontAwesome';
+    font-size: 22px;
+    color: #B3B3B3;
+    position: absolute;
+    right: 12px; 
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.section-refine-search .keyword span {
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+    cursor: pointer;
+}
+  
+.section-refine-search input[type="submit"] {
+    width: 100%;
+    border: 2px solid #ff6600;
+    height: 55px;
+    line-height: 51px;
+    text-align: center;
+    color: #ff6600;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+    background: #fff;
+    border-radius: 5px;
+    margin: 37px 0 0;
+}
+
+.section-refine-search input[type="submit"]:hover{
+    background: #ff6600;
+    color: #fff;
+    transition: right 0.3s ease-in-out;
+}
+
+.section-full-events-schedule{
+    padding: 70px 0;
+    background: #f8f8f8;
+}
+
+.section-full-events-schedule .section-content {
+    background: #fff;
+    margin: -6px 0 0 6px;
+}
+
+.section-full-events-schedule .section-content .tab-content {
+    border-left: 1px solid #f8f8f8;
+    margin: -6px 0 0;
+}
+
+.section-full-events-schedule .sectionRow{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.section-full-events-schedule .section-content .nav {
+    border-right: 1px solid #f8f8f8;
+}
+
+.section-full-events-schedule .section-content .nav>li {
+    position: relative;
+    display: block;
+    padding: 30px 50px 30px 80px;
+    background: #fff;
+}
+
+.section-full-events-schedule .section-content .nav>li:hover {
+    background: #f8f8f8;   
+}
+
+.section-full-events-schedule .section-content .nav li:before {
+    content: " ";
+    width: 20px;
+    height: 19px;
+    background: url(Images/schedule-clock.png);
+    display: block;
+    position: absolute;
+    top: 34px;
+    left: 40px;
+}
+
+.section-full-events-schedule .section-content .nav li:after {
+    content: " ";
+    width: 6px;
+    height: 10px;
+    background: url(Images/events-arrow.png);
+    display: block;
+    position: absolute;
+    top: 45%;
+    right: 40px;
+}
+
+.section-full-events-schedule .section-content .nav .schedule-time {
+    /* display: block; */
+    font-size: 24px;
+    color: #373737;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 0 0 10px;
+}
+
+.section-full-events-schedule .section-content .nav .schedule-time strong {
+    /* display: inline-block; */
+    font-size: 12px;
+    color: #373737;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section-full-events-schedule .section-content .nav .schedule-title {
+    /* display: block; */
+    font-size: 12px;
+    color: #373737;
+    font-weight: 700;
+    margin: 0 0 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.section-full-events-schedule .section-content .nav .schedule-ticket-info {
+    display: inline-block;
+    font-size: 10px;
+    color: #fff;
+    background: #ff6600;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.section-full-events-schedule .section-content .tab-content img {
+    width: 100%;
+}
+
+.section-full-events-schedule .section-content .full-event-info {
+    padding: 45px;
+    overflow: hidden;
+}
+
+.section-full-events-schedule .section-content .full-event-info-header {
+    overflow: hidden;
+    margin: 0 0 45px;
+}
+
+.section-full-events-schedule .section-content .full-event-info-content p {
+    color: #373737;
+    line-height: 25px;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+    margin: 0 0 15px;
+}
+ 
+.section-full-events-schedule .section-content .tab-pane .full-event-info-content .book-ticket {
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 70px;
+    text-transform: uppercase;
+    background: #ff6600;
+    border-radius: 50px;
+    float: right;
+    margin: 25px 0 0;
+}
+
+.info-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 15px;
+}
+
+.info-1 .ticket-left-info {
+    display: inline-block;
+    font-size: 10px;
+    color: #fff;
+    background: #ff6600;
+    font-weight: 700;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.full-event-info h2 {
+    font-size: 22px;
+    color: #373737;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+    float: left;
+    /* margin: 0 0 15px; */
+}
+
+.event-date-info, .event-venue-info {
+    font-size: 15px;
+    color: #6f6f6f;
+    display: inline-block;
+    margin: 0 0 15px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+}
+
+.section-select-seat-2-featured-header {
+    /* min-height: 322px; */
+    background:  linear-gradient(rgba(36,36,36, 0.8),rgba(36,36,36, 0.8)), url(Images/page-featured-img.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.section-select-seat-2-featured-header .section-content {
+    text-align: center;
+    position: relative;
+    padding: 80px 0;
+}
+
+.section-select-seat-2-featured-header .section-content p {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+
+.section-select-seat-2-featured-header .section-content p strong {
+    font-size: 40px;
+    line-height: 40px;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Bold"; */
+    margin: 10px 0;
+    color: #fff;
+
+}
+
+.section-select-seat-2-featured-header .section-content p span {
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+    margin: 15px 0 0;
+}
+  
+.ticketSection{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.stage-name {
+    margin: 0 0 55px;
+    text-align: center;
+}
+
+.stage-name h3 {
+    margin: 0 0 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #ff6600;
+    border: 1px solid #ff6600;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+}
+
+.stage-name p {
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+}
+
+.stage-name p span {
+    display: block;
+    /* font-family: "Montserrat-Light"; */
+}
+
+.mapImg{
+    margin: 0 0 10px;
+}
+
+.mapImg img{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.seat-label {
+    margin: 0 0 45px;
+}
+
+.seat-label ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.seat-label ul li {
+    display: inline-flex;
+    margin: 0 20px;
+    align-items: center;
+    color: #757575;
+    font-size: 18px;
+}
+
+.seat-label ul li img {
+    margin: 0 20px 0 0;
+}
+
+.seat-info {
+    color: #949494;
+    font-size: 14px;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 20px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+    padding: 0 0 0 57px;
+    background: url(Images/info.png) no-repeat left center;
+}
+
+.tickets {
+    background: #fafafa;
+    border-top: 1px solid #cecece;
+    border-left: 1px solid #cecece;
+    border-right: 1px solid #cecece;
+    padding: 30px;
+}
+
+.tickets label {
+    display: block;
+    color: #6f6f6f;
+    margin: 0 0 20px;
+    font-weight: normal;
+}
+
+.ticket-price select {
+    border: 2px solid #dedede;
+    border-radius: 4px;
+    padding: 0 10px;
+    height: 35px;
+    line-height: 51px;
+    height: auto;
+    width: 100%;
+    color: #b3b3b3;
+    font-size: 15px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+}
+
+.ticket-price .table {
+    width: 100%;
+}
+
+.ticket-price .table {
+    border: 1px solid #cecece;
+    margin: 0;
+}
+
+.ticket-price tr{
+    display: block;
+    overflow: hidden;
+    text-align: left;
+}
+
+.ticket-price .table > thead > tr > th {
+    border: none;
+    background: #fafafb;
+    color: #6f6f70;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+    padding: 10px 20px;
+    font-weight: normal;
+}
+
+.ticket-price .table > tbody {
+    overflow-y: scroll;
+    height: 409px;
+    display: block;
+}
+
+.ticket-price .table > tbody > tr {
+    position: relative;
+    border-top: 1px solid #ddd;
+}
+
+.ticket-price .table > tbody > tr > td {
+    padding: 30px;
+    vertical-align: top;
+    line-height: 20px;
+}
+.ticket-price table tr td {
+    color: #6f6f6f;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+}
+
+.ticket-price table tr td span {
+    display: block;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+}
+
+.select-seat:hover{
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: 50px auto 0px;
+  }
+
+  .range-track {
+    height: 6px;
+    background-color: #ddd;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  .range-fill {
+    height: 6px;
+    background-color: orange;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    transform: translateY(-50%);
+  }
+
+  .range-label {
+    position: absolute;
+    top: -35px;
+    background-color: orange;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .min-label {
+    left: 20%;
+    transform: translateX(-50%);
+  }
+
+  .max-label {
+    right: 20%;
+    transform: translateX(50%);
+  }
+
+  .range-slider {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    pointer-events: none;
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 30px;
+    background: none;
+    position: absolute;
+    top: 0;
+    pointer-events: all;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 16px;
+    width: 16px;
+    background: orange;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -5px;
+  }
+
+  input[type="range"]::-moz-range-thumb {
+    height: 16px;
+    width: 16px;
+    background: orange;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+.ticket-price th, .ticket-price td {
+    float: left;
+    width: 33%;
+}
+
+.section-featured-header.all-sports-events {
+    /* min-height: 322px; */
+    background: linear-gradient(rgba(31, 31, 31, .8), rgba(31, 31, 31, .8)), url(Images/page-featured-img-category.jpg) no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.section-featured-header.all-sports-events .section-content {
+    padding: 140px 0 150px;
+    text-align: left;
+    position: relative;
+}
+
+.section-featured-header.all-sports-events .section-content h1 {
+    font-size: 40px;
+    margin: 0;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+}
+
+.theaterSection{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.section-search-content {
+    padding: 70px 0;
+    background: #f8f8f8;
+}
+
+.section-search-content .search-filter {
+    background: #fff;
+    padding: 30px 0;
+    border-radius: 5px;
+}
+
+.section-search-content .search-result-item {
+    padding: 35px;
+    background: #fff;
+    border-radius: 5px;
+    margin: 0 0 35px;
+    position: relative;
+    overflow: hidden;
+}
+
+.section-search-content .search-result-header {
+    margin: 0 0 35px;
+}
+
+.sortingSection{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.section-search-content .search-result-header h2 {
+    font-size: 18px;
+    color: #6f6f6f;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+    margin: 0 0 15px;
+}
+
+.section-search-content .search-result-header span {
+    font-size: 14px;
+}
+
+.section-search-content .search-result-header label {
+    display: inline-block;
+    /* width: 25%; */
+    font-size: 15px;
+    color: #6f6f6f;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+}
+
+.categorySection{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.section-search-content .search-result-item .search-result-item-info h3 {
+    font-size: 18px;
+    color: #6f6f6f;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+    padding: 0 0 30px;
+    margin: 0 0 30px;
+    border-bottom: 1px solid #dedede;
+}
+
+.section-search-content .search-result-item .search-result-item-info ul {
+    list-style-type: none;
+}
+
+.section-search-content .search-result-item .search-result-item-price span {
+    display: block;
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+    margin: 0 0 15px;
+}
+
+.section-search-content .search-result-item .search-result-item-price strong {
+    display: block;
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Bold"; */
+    margin: 0 0 15px;
+}
+
+.section-search-content .search-result-item .search-result-item-price a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+    padding: 18px;
+    background: #ff6600;
+    border-radius: 5px;
+    border: 1px solid #ff6600;
+}
+
+.section-search-content .search-result-item .search-result-item-price a:hover {
+    background: #fff;
+    color: #ff6600;
+}
+
+.section-search-content .search-result-item .search-result-item-info ul li span {
+    font-size: 13px;
+    color: #6f6f6f;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+    margin: 0 0 15px;
+    display: block;
+}
+
+.section-search-content .search-result-item.sold-out .search-result-item-price a {
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+    padding: 18px;
+    background: #dedede;
+    border-radius: 5px;
+    border: 1px solid #dedede;
+    pointer-events: none;
+    cursor: default;
+    text-transform: uppercase;
+}
+
+.section-search-content .search-result-item.sale .search-result-item-price strong span {
+    display: inline-block;
+    text-align: center;
+    color: #6f6f6f;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+    text-decoration: line-through;
+    margin: 0 15px 0 0;
+}
+
+.section-search-content .search-result-item.sale .ribbon {
+    height: 143px;
+    overflow: hidden;
+    position: absolute;
+    right: -33px;
+    text-align: right;
+    top: -67px;
+    width: 110px;
+    z-index: 1;
+}
+
+.section-search-content .search-result-item.sale .ribbon span {
+    background: #2ecc71 none repeat scroll 0 0;
+    color: #fff;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 40px;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+    padding: 63px 0 0;
+    position: absolute;
+    right: -23px;
+    text-align: center;
+    text-transform: uppercase;
+    top: 19px;
+    transform: rotate(45deg);
+    width: 112px;
+}
+
+.eventDetails{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.section-search-content .search-filter .search-event-title {
+    padding: 0 30px 30px;
+    border-bottom: 1px solid #dedede;
+    margin: 0 0 30px;
+}
+
+.section-search-content .search-filter .search-event-title h2 {
+    color: #6f6f6f;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+    text-align: center;
+}
+
+.section-search-content .search-filter .search-event-title h2 span {
+    display: block;
+    font-size: 13px;
+    color: #a0a0a0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Light"; */
+    margin: 0 0 15px;
+}
+
+.section-search-content .search-filter > div {
+    padding: 0 30px;
+    margin: 0 0 30px;
+}
+
+.section-search-content .search-filter h3 {
+    font-size: 14px;
+    color: #6f6f6f;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat-Regular"; */
+    margin: 0 0 25px;
+}
+
+.checkbox {
+    /* padding-left: 20px; */
+    margin: 0 0 15px;
+    position: relative;
+    display: block;
+}
+
+.checkbox input[type="checkbox"]{
+    cursor: pointer;
+}
+
+:checked + label {
+    color: #6f6f6f;
+}
+.checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    padding-left: 15px;
+    color: #b3b3b3;
+    font-size: 14px;
+    min-height: 18px;
+    line-height: 18px;
+}
+
+input[type="checkbox"]:checked + label::before{
+    background-color: #ff6600;
+    border-color: #6f6f6f;
+}
+/* Responsive Media Query */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+
+    .section-artist-content .artist-details .artist-details-title h3{
+        float: none;
+    }
+
+    .section-artist-content .artist-details .artist-details-title a {
+        float: none;
+        margin: 10px 0 0;
+    }
+
+    .section-artist-content .related-artist .related-artist-list .related-artist-item {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-artist-content .artist-details .artist-details-title, .section-artist-content .related-artist .related-artist-list .related-artist-item{
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        /* padding: 0 15px; */
+    }
+
+    #navSection .cart {
+        display: none;
+    }
+
+    .mobile-cart {
+        position: absolute;
+        right: 60px;
+        bottom: -10px;
+        display: block;
+    }
+
+    .mobile-cart a {
+        font-size: 15px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        border: 1px solid #f89406;
+        border-radius: 20px;
+        margin: 6px 0;
+        padding: 7px 20px;
+        font-family: "Montserrat", sans-serif;
+        /* font-family: "Montserrat-Light"; */
+        width: 90px;
+        position: relative;
+        display: block;
+    }
+
+    .mobile-cart a:before {
+        display: block;
+        content: "\f23d";
+        font-family: 'FontAwesome';
+        position: absolute;
+        top: 7px;
+        right: 20px;
+        font-size: 18px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #navSection {
+        position: fixed;
+        top: 0;
+        right: -270px;
+        width: 250px;
+        height: 100%;
+        background-color: #111;
+        transition: right 0.3s ease-in-out;
+        z-index: 999;
+        padding-top: 50px;
+        flex-direction: column;
+    }
+
+    #navSection ul {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    #navSection ul li {
+        margin: 0;
+    }
+
+    #navSection ul li a {
+        border-bottom: 1px solid #333;
+    }
+
+    .close-icon {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    #menuToggle:checked ~ nav#navSection {
+        right: 0;
+    }
+
+    .section-upcoming-events .eventList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .categoryList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recent-video-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-1 {
+        width: 100%;
+    }
+    
+    .footer-2 {
+        width: 100%;
+    }
+
+    .logo-copyright {
+        display: block;
+        text-align: center;
+    }
+
+    .main-footer{
+        text-align: center;
+    }
+
+    .footer-2 ul li {
+        display: inline-block;
+    }
+
+    .about, .support, .social{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .footer-1 h3{
+        margin: 0 0 10px;
+    }
+
+    .section-newsletter .section-content {
+        width: 100%;
+    }
+
+    .section-newsletter .section-content .newsletter-form input[type="email"] {
+        width: 80%;
+        margin: 0 0 30px;
+    }
+
+    .section-latest .latestThings {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .latest-news .section-content{
+        margin-left: -40px;
+    }
+
+    .latest-tweets .section-content {
+        margin-left: -25px;
+    }
+
+    .section-latest .latest-news {
+        margin: 0 0 70px 0px;
+    }
+
+    .eventClass {
+        margin: 0px 0px 30px;
+    }
+
+    .section-upcoming-events .section-header p {
+        width: 100%;
+    }
+
+    .section-upcoming-events .section-header a {
+        float: none;
+    }
+
+    .section-call-to-action .section-content {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-call-to-action .section-content .action-btn {
+        display: inline-block;
+        padding: 15px;
+    }
+
+    .learnMore{
+        text-align: center;
+    }
+
+    .shareExperience, .learnMore{
+        margin: 0px 0px 20px;
+    }
+    
+    .section-gallery .gallery-list {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* .carousel::-webkit-scrollbar {
+        display: none;
+    }
+    
+    .carousel {
+        -ms-overflow-style: none;  
+        scrollbar-width: none;
+    } */
+
+    .artist-content-list {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-page-header .entry-title{
+        font-size: 25px;
+    }
+
+    .related-artist-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .related-artist-item{
+        padding: 0px 15px;
+    }
+
+    .artist-content-list .gallery-pagination{
+        margin-bottom: 30px;
+    }
+
+    .section-refine-search .row {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    
+      .section-refine-search input[type="text"],
+      .section-refine-search select,
+      .section-refine-search .submit input[type="submit"] {
+        width: 100%;
+      }
+
+      .section-refine-search .form-contents {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+    .section-refine-search .keyword, .section-refine-search .month {
+        margin: 0 0 30px;
+    }
+
+    .section-full-events-schedule .section-content .nav>li {
+        padding: 30px 40px 30px 80px;
+    }
+
+    .ticketSection{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ticket-price .table > tbody > tr > td {
+        padding: 30px 20px;
+    }
+
+    .seat-info {
+        margin: 0 auto 35px;
+    }
+
+    .theaterSection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sortingSection{
+        margin-top: 30px;
+        /* grid-template-columns: repeat(1, 1fr); */
+    }
+}
+
+@media (max-width: 426px) {
+    .categoryList {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .countSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recent-video-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sponsorsList{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .container {
+        width: 100%;
+        /* padding: 0 10px; */
+    }
+
+    .section-latest .latest-news .news-item {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-latest .latest-news .news-item-img img {
+        width: 100%;
+    }
+
+    .news-item-img{
+        margin: 0 0 30px;
+    }
+
+    .latest-tweets .section-content, .latest-news .section-content {
+        margin-left: 0px;
+    }
+
+    .contactSection, .LoginSection{
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #heroSection {
+        margin-top: 50px;
+    }
+
+    #main-hero-section {
+        background-size: cover;
+        height: 585px;
+    }
+
+    .section-call-to-action .section-content {
+        padding: 50px 15px;
+        text-align: center;
+    }
+
+    #section-todays-schedule .section-header .todays-date {
+        float: none;
+    }
+
+    .logoClass {
+        padding: 0 10px;
+    }
+
+    #mainHead .logoClass img {
+        width: 140px;
+        height: 15px;
+    }
+
+    .hero-content .hero-search input[type="text"] {
+        padding: 16px 55px 16px 25px;
+        font-size: 20px;
+    }
+
+    .homePageLogo img {
+        max-height: 25px;
+        width: auto;
+    }
+
+    .sponsorsList .listItem {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .section-sponsors {
+        padding: 35px 0 20px;
+    }
+
+    .section-gallery .gallery-list {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .gallery-pagination .pagination {
+        padding: 0px;
+        width: 100%;
+    }
+
+    .gallery-pagination .pagination > li > a > span {
+        padding: 10px;
+    }
+ 
+    /*.gallery-pagination .pagination li {
+        display: inline;
+    } */
+
+    .prevBtn, .nextBtn{
+        display: none;
+    }
+
+    .section-featured-header.order-tickets-without-seat .section-content p strong{
+        font-size: 30px;
+    }
+
+    .section-page-header .entry-title {
+        font-size: 20px;
+    }
+
+    .section-page-header {
+        padding: 25px 15px;
+    }
+
+    .section-choose-how-many-tickets {
+        padding: 0;
+    }
+
+    .artist-event-item-info-list {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .artist-event-item-price{
+        margin-top: 25px;
+    }
+
+    .related-artist-list {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-artist-content .artist-event-item {
+        padding: 20px 10px;
+    }
+
+    .section-artist-content .artist-event-item .artist-event-item-info ul li {
+        padding: 0 5px;
+    }
+
+    .section-artist-featured-header .section-content h1 {
+        font-size: 28px;
+    }
+
+    .section-artist-featured-header .section-content {
+        padding: 50px 0px;
+    }
+
+    .section-refine-search .form-contents {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-refine-search .keyword, .section-refine-search .month {
+        margin: 0 0 30px;
+    }
+
+    .section-full-events-schedule .sectionRow{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .full-event-info h2 {
+        margin: 0 0 20px;
+    }
+
+    .section-full-events-schedule .section-content .tab-pane .full-event-info-content .book-ticket {
+        float: none;
+    }
+
+    .section-full-events-schedule .section-content .full-event-info-content p {
+        margin: 0 0 40px;
+    }
+
+    .full-event-info-content{
+        text-align: center;
+    }
+
+    .seat-info {
+        margin: 0 0px 35px;
+        padding: 0 0 0 45px;
+        width: 100%;
+    }
+
+    .seat-label ul li{
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .seat-label ul li img {
+        margin: 0 15px 0 0;
+        width: 20px;
+    }
+
+    .section-select-seat-2-featured-header .section-content p {
+        font-size: 18px;
+    }
+
+    .section-select-seat-2-featured-header .section-content p strong {
+        font-size: 30px;
+    }
+
+    .section-featured-header.all-sports-events .section-content {
+        padding: 70px 0;
+    }
+
+    .section-featured-header.all-sports-events .section-content h1{
+        font-size: 30px;
+    }
+
+    .sortingSection, .categorySection, .eventDetails{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-search-content .search-result-header label {
+        margin-top: 15px;
+    }
+
+    .search-result-item-price{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .section-search-content .search-result-item {
+        padding: 20px;
+    }
+
+    .section-search-content .search-result-item .search-result-item-price a {
+        display: inline;
+        padding: 14px 16px;
+    }
+
+    .section-search-content .search-result-item .search-result-item-price strong {
+        padding-bottom: 10px;
+    }
+
+    .section-search-content .search-result-item .search-result-item-info ul li {
+        margin-bottom: 10px;
+    }
+
+    .section-search-content .search-result-item .search-result-item-info ul li span {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 376px) {
+    .sponsorsList .listItem {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .section-call-to-action .section-content h3 {
+        font-size: 25px;
+    }
+
+    .section-call-to-action .section-content .action-btn {
+        padding: 15px;
+        font-size: 15px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 22px;
+    }
+
+    .hero-location p {
+        font-size: 15px;
+    }
+
+    #main-hero-section {
+        height: 520px;
+    }
+
+    .gallery-pagination .pagination > li > a {
+        width: 25px;
+        height: 25px;
+        font-size: 10px;
+    }
+
+    .gallery-pagination .pagination > li:first-child > a, .gallery-pagination .pagination > li:last-child > a{
+        height: 25px;
+    }
+
+    /* .gallery-pagination .pagination > li > a > span {
+        padding: 5px;
+    } */
+
+    .section-artist-content .artist-event-item .artist-event-item-info ul {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .section-artist-content .artist-event-item .artist-event-item-info ul li span.location {
+        margin: 2px 0 0;
+    }
+
+    .section-artist-content .artist-event-item .artist-event-item-info ul li {
+        margin: 0 0 25px;
+    }
+
+    .section-artist-content .artist-event-item .artist-event-item-info ul li span {
+        margin: 0 0 10px;
+    }
+    
+    .tickets{
+        padding: 20px;
+    }
+
+    .ticketSection #secondary{
+        padding: 0px;
+    }
+
+    .ticket-price .table > thead > tr > th, .ticket-price .table > tbody > tr > td {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .section-page-header .entry-title {
+        font-size: 18px;
+    }
+
+    .section-full-events-schedule .section-content .full-event-info {
+        padding: 30px;
+    }
+
+    .section-full-events-schedule .section-content .tab-pane .full-event-info-content .book-ticket {
+        padding: 15px 35px;
+    }
+
+    .section-refine-search label {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 62px) and (min-width: 75em) { /* 75em = 1200px */
+    .section-latest .latest-tweets .twitter-header .twitter-name {
+        width: 100%;
+        float: none;
+    }
+
+    .section-latest .latest-tweets .twitter-header .twitter-btn {
+        text-align: left;
+        margin: 0;
+    }
+
+    #navSection li a {
+        font-size: 14px !important;
+        padding: 14px 10px !important;
+        line-height: 35px !important;
+    }
+
+    #navSection .cart{
+        margin: 0 0 0 10px;
+    }
+
+    #navSection .cart a {
+        padding: 0px 16px !important;
+    }
+
+    #navSection .cart a:before {
+        top: 0px;
+    }
+
+    .section-video-parallax .section-content, .section-newsletter .section-content {
+        width: 100%;
+    }
+}
